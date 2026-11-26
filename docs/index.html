@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map Rank Tracker</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Map Rank Tracker</h1>
+    <p class="sub" id="subtitle">Loading…</p>
+  </div>
+  <div class="scanbar" id="scanbar" aria-label="Scan dates"></div>
+</header>
+
+<div id="banner" class="banner" hidden></div>
+
+<nav id="keywords" class="tabs" aria-label="Keywords"></nav>
+
+<section class="kpis" id="kpis" aria-live="polite"></section>
+
+<main class="layout">
+  <section class="mapwrap">
+    <div id="showing" class="showing"></div>
+    <div id="map" role="img" aria-label="Map of rank at each grid point"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+  <aside class="panel">
+    <div id="spot" class="spot" hidden></div>
+    <h2 id="paneltitle">Competitors</h2>
+    <p class="hint">Click a row to see where that listing ranks on the map. Click a bubble, a coloured square, a legend item or a rank card to highlight an area.</p>
+    <div class="tablewrap"><table id="comp">
+      <thead><tr>
+        <th>Business (sorted by avg rank)</th><th class="num">Rating</th><th class="num">Avg rank</th><th class="num">Share of voice</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </aside>
+</main>
+
+<footer class="foot">
+  <p id="meta"></p>
+  <details>
+    <summary>How the numbers are calculated</summary>
+    <ul>
+      <li>Each bubble is the rank shown on Google Maps when searching from that exact spot (search-this-area on, mobile).</li>
+      <li>A listing that is not in the top 20 at a spot counts as rank 21 in the averages. Failed spots are ignored.</li>
+      <li>Share of voice is our own estimate: every listing scores 1 ÷ rank at each spot, and your share is your score divided by everyone's. It will not match other tools.</li>
+      <li>Average rank is taken over every spot on the grid, so it is high for everyone: a listing only ranks well near its own address. Compare yourself with the other rows, not with rank 1.</li>
+      <li>The coloured squares are an approximation: each spot is drawn as a square the size of the grid spacing around it, and the km² figures are spots × spacing². Google was only asked at the centre of each square.</li>
+      <li>Paid ads at the top of the list are not counted in the ranks.</li>
+    </ul>
+  </details>
+</footer>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="metrics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

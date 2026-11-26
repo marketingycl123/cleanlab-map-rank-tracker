@@ -1,0 +1,5 @@
+{
+  "_help": "Copy this file to docs/data/services_manual.json. Use each business's name EXACTLY as the dashboard shows it. List the services you see on its Google Maps page. Lines starting with _ are ignored.",
+  "YourCleanLab": ["Dry cleaning", "Ironing", "Laundry pick-up", "Laundry wash and fold", "Special care fabric cleaning", "Laundry delivery"],
+  "Wash O Pratic Jan van Galen": ["Wash and fold", "Self-service laundry"]
+}
