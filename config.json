@@ -1,0 +1,51 @@
+{
+  "business": {
+    "name": "YourCleanLab",
+    "place_id": "ChIJI-xTkxYJxkcRdf42CsZIwnI",
+    "title_contains": "cleanlab",
+    "address": "Koninginneweg 145-3, 1075 CM Amsterdam"
+  },
+  "grid": {
+    "center_lat": 52.3531,
+    "center_lng": 4.863,
+    "size": 7,
+    "spacing_km": 1.0,
+    "zoom": "14z"
+  },
+  "search": {
+    "device": "mobile",
+    "os": "android",
+    "depth": 20,
+    "search_this_area": true
+  },
+  "keywords": [
+    {
+      "keyword": "laundry near me",
+      "language_code": "en"
+    },
+    {
+      "keyword": "laundry",
+      "language_code": "en"
+    },
+    {
+      "keyword": "laundromat",
+      "language_code": "en"
+    },
+    {
+      "keyword": "wasserette",
+      "language_code": "nl"
+    },
+    {
+      "keyword": "laundry service",
+      "language_code": "en"
+    },
+    {
+      "keyword": "laundry service amsterdam",
+      "language_code": "en"
+    },
+    {
+      "keyword": "laundry amsterdam",
+      "language_code": "en"
+    }
+  ]
+}
